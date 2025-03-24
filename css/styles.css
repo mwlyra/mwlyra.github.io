@@ -38,24 +38,6 @@
   max-width: 500px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  #title .row {
-    flex-direction: column-reverse;
-  }
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .row {
   margin-right: 0;
   margin-left: 0;
@@ -80,15 +62,6 @@ img {
   text-align: center !important;
 }
 
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
 .page-wrapper {
   width: 100%;
   overflow: hidden;
@@ -106,6 +79,21 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 768px) {
   #footer {
     padding-left: 15px;
@@ -113,9 +101,40 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  #title .row {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (min-width: 992px) {
   #title img {
     margin-left: 20%;
     max-width: 70%;
+  }
+}
+
+/* Ajuste para desktop (telas grandes) */
+@media (min-width: 992px) {
+  #title .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre texto e imagem */
+    padding-left: 5%; /* Margem esquerda para o texto */
+    padding-right: 5%; /* Margem direita para a imagem */
+  }
+
+  #title .col-lg-6:first-child {
+    flex: 0 0 50%; /* Largura fixa para o texto */
+    padding-right: 5%; /* Espaço entre texto e imagem */
+  }
+
+  #title .col-lg-6:last-child {
+    flex: 0 0 45%; /* Largura reduzida para a imagem */
+    text-align: right; /* Alinha a imagem à direita */
+  }
+
+  #title img {
+    max-width: 80%; /* Controla o tamanho da imagem */
   }
 }
