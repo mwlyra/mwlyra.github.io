@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>TinDog</title>
     <link rel="icon" href="images\favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css\styles.css" />
@@ -15,27 +15,28 @@
   </head>
 
   <body>
+    <div class="page-wrapper">
     <!-- Title -->
     <section id="title">
       <div
         class="row flex-lg-row-reverse align-items-center g-0 py-0 gradient-background m-0"
       >
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-12 col-lg-6 text-center text-lg-start">
           <img
             src="images\iphone.png"
-            class="d-block mx-lg-auto img-fluid mt-5"
+            class="d-block img-fluid mt-5"
             alt="iphone"
             width="350"
             height="500"
             loading="lazy"
           />
         </div>
-        <div class="col-lg-6 text-col">
+        <div class="col-12 col-lg-6 text-center text-lg-start px-4">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
             Meet new and interesting dogs nearby.
           </h1>
 
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
             <button type="button" class="btn btn-light btn-lg px-4 me-md-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -292,7 +293,7 @@
     <!-- Footer -->
     <section id="footer">
 
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top gradient-background">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top gradient-background w-100 m-0">
         <div class="col mb-3 text-end">
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -346,5 +347,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+  </div>
   </body>
 </html>
