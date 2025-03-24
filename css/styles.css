@@ -114,27 +114,27 @@ body {
   }
 }
 
-/* Ajuste para desktop (telas grandes) */
+
 @media (min-width: 992px) {
   #title .row {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espaço entre texto e imagem */
-    padding-left: 5%; /* Margem esquerda para o texto */
-    padding-right: 5%; /* Margem direita para a imagem */
+    justify-content: space-between; 
+    padding-left: 5%; 
+    padding-right: 5%; 
   }
 
   #title .col-lg-6:first-child {
-    flex: 0 0 50%; /* Largura fixa para o texto */
-    padding-right: 5%; /* Espaço entre texto e imagem */
+    flex: 0 0 50%; 
+    padding-right: 5%; 
   }
 
   #title .col-lg-6:last-child {
-    flex: 0 0 45%; /* Largura reduzida para a imagem */
-    text-align: right; /* Alinha a imagem à direita */
+    flex: 0 0 45%; 
+    text-align: right; 
   }
 
   #title img {
-    max-width: 80%; /* Controla o tamanho da imagem */
+    max-width: 80%; 
   }
 }
