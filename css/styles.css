@@ -2,7 +2,12 @@
   background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
-  width: 100vw;
+  width: 100%;
+  min-height: 40vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 @keyframes gradient-animation {
@@ -37,8 +42,14 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100%;
 }
 
+@media (max-width: 768px) {
+  #title .row {
+    flex-direction: column-reverse;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -51,10 +62,60 @@ img {
 }
 
 #features .row {
-  justify-content: center; /* Centraliza os itens */
-  text-align: center; /* Centraliza o texto (opcional) */
+  justify-content: center;
+  text-align: center;
 }
 
 #features .col {
   max-width: 400px;
+}
+
+#title img {
+  max-width: 80%;
+  margin-top: 2rem !important;
+}
+
+#title .text-col {
+  padding: 0 1.5rem;
+  text-align: center !important;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+#footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#footer .gradient-background {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  #title img {
+    margin-left: 20%;
+    max-width: 70%;
+  }
 }
